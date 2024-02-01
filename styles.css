@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #635a5a; /* Gris claro como fondo */
+    color: #0e0c0c; /* Texto principal en color gris oscuro */
+    transition: background-color 0.5s ease; /* Animación de transición de color de fondo */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px; /* Establecer un ancho máximo para los contenedores */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor principal */
+}
+
+.paragraph {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: #5eb86a; /* Fondo blanco para cada párrafo */
+    transition: background-color 0.5s ease; /* Animación de transición de color de fondo */
+    text-align: center; /* Centrar el texto dentro del párrafo */
+}
+
+.paragraph h2 {
+    margin-bottom: 10px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    max-height: 200px; /* Establecer una altura máxima para las imágenes */
+    display: block; /* Hacer que la imagen sea un elemento de bloque para centrarla horizontalmente */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+}
+
+.emoji-btn {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #4CAF50; /* Verde pastel para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Animación de transición de color de fondo */
+}
+
+.emoji-btn:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #635a5a; /* Fondo blanco para el contenedor de resultados */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease; /* Animación de transición de color de fondo */
+    
+}
+
+.result-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajusta la altura máxima según tus preferencias */
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Animación de entrada para el contenedor de resultados */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.result-container {
+    animation: fadeIn 1s ease; /* Aplicar la animación */
+}
